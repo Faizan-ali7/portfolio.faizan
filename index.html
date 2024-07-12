@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head> My portfolio</head>
+    <title>Faizan Ali Memon's Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #444 3px solid;
+        }
+        header a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+        header a:hover {
+            color: #4CAF50; /* Change color on hover */
+        }
+        header a::before {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: #4CAF50; /* Line color */
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+            transform-origin: bottom right;
+        }
+        header a:hover::before {
+            transform: scaleX(1); /* Expand line on hover */
+            transform-origin: bottom left;
+        }
+        header ul {
+            padding: 0;
+            list-style: none;
+            text-align: center;
+        }
+        header li {
+            display: inline;
+            padding: 0 20px;
+        }
+        .welcome {
+            text-align: center;
+            padding: 60px 0;
+            background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('https://www.odu.edu/sites/default/files/program-page/headerimages/civil-engineering-header.jpeg'), url('https://www.publicdomainpictures.net/pictures/320000/nahled/background-image-of-cranes-towering.jpg');
+            background-size: cover;
+            color: #fff;
+            background-position: center;
+        }
+        .welcome h1 {
+            font-size: 3em;
+            color: #ffffff;
+        }
+        .welcome p {
+            font-size: 1.5em;
+            color: #ffffff;
+        }
+        .about, .contact, .projects {
+            background: #fff;
+            padding: 30px;
+            margin-top: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .about h2, .contact h2, .projects h2 {
+            text-align: center;
+            color: #444;
+        }
+        .projects {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .project-section {
+            width: 48%;
+            margin-top: 20px;
+        }
+        .project-section h3 {
+            color: #444;
+            text-align: center;
+        }
+        .project-section ul {
+            list-style: none;
+            padding: 0;
+        }
+        .project-section li {
+            background: #f4f4f4;
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .project-section a {
+            text-decoration: none;
+            color: #333;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+        .project-section a:hover {
+            color: #4CAF50; /* Change color on hover */
+        }
+        .project-section a::before {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: #4CAF50; /* Line color */
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+            transform-origin: bottom right;
+        }
+        .project-section a:hover::before {
+            transform: scaleX(1); /* Expand line on hover */
+            transform-origin: bottom left;
+        }
+        .icon {
+            font-size: 1.2em;
+            margin-right: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #333;
+            color: #fff;
+            margin-top: 20px;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <ul>
+                <li><a href="#welcome">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#autocad-projects">AutoCAD Projects</a></li>
+                <li><a href="#revit-projects">Revit Projects</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="container">
+        <section id="welcome" class="welcome">
+            <h1>Welcome to My Portfolio</h1>
+            <p>I'm Faizan Ali Memon, a final year civil engineering student with a strong grip on AutoCAD and Revit.</p>
+        </section>
+
+        <section id="about" class="about">
+            <h2>About Me</h2>
+            <p>I am a final year civil engineering student with a strong grip on AutoCAD and Revit. I have handled many tasks related to these software.</p>
+            <p>Currently, I am doing my final year thesis on "Carbon capture through biochar embedded concrete: a sustainable approach".</p>
+            <p>I gained field experience during my one-month internship at Pak Sindh Towers, where I learned about raft foundation. Moreover, I am currently doing my internship at Pakistan Civil Aviation Authority.</p>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Contact</h2>
+            <p><i class="fas fa-envelope icon"></i><a href="mailto:faizanali.memon717@gmail.com">faizanali.memon717@gmail.com</a></p>
+        </section>
+
+        <section id="projects" class="projects">
+            <div class="project-section" id="autocad-projects">
+                <h3>AutoCAD Projects</h3>
+                <ul>
+                    <li>
+                        <a href="D:\autocad and revit\autocad.html" download>AutoCAD Project </a>
+                    </li>
+                    
+                    <!-- Add more AutoCAD projects here -->
+                </ul>
+            </div>
+            <div class="project-section" id="revit-projects">
+                <h3>Revit Projects</h3>
+                <ul>
+                    <li>
+                        <a href="D:\autocad and revit\portfolio.html" download>Revit Project </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Faizan Ali Memon. All rights reserved.</p>
+    </footer>
+</body>
+</html>
